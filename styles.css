@@ -1,5 +1,5 @@
 body{
-    font-family: 'Roboto';
+    font-family: Arial, Helvetica, sans-serif;
     background: #090909 ;
 }
 .background-black{
@@ -7,14 +7,14 @@ body{
     height: 100%;
     background: black;
 }
-.centered {
-    position: fixed;
+.centered{
     top: 50%;
     left: 50%;
+    position: fixed;
     transform: translate(-50%, -50%);
 }
 .container{
-    height: 100%;
+    height: 100%;    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,10 +22,12 @@ body{
 .post{
     width: 560px;
     height: 780px;
+    display: flex;
+    flex-flow: column nowrap;
     background: white;
 }
 .post-header{
-	height: 72px;
+	height: 72px;	
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,87 +40,53 @@ body{
 .profile{
     width: 48px;
     margin-left: 3px;
+    display: block;
 }
 .user-name{
-    text-align: left;
     font-size: 18px;
+    text-align: left;
+}
+p.user-title{
+    font-weight: bold;
 }
 .user-name p{
     margin: 1px;
 }
-p.user-title{
-    font-weight: 900;
-    font-size: 17px;
-}
 .settings{
-    top: 10%;
-    left: 75%;
-    position: fixed;
+    padding-right: 18px;
 }
-.settings-button{
+.button-enabled{
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
   color: black;
   background-color: white;
-  border: none;}
-.settings-button:active {
+  border: none;
+}
+.button-enabled:active {
   background-color: white;
   transform: translateY(4px);
+}
+.post-body{
+	flex: 1;
+    align-content: center;
 }
 .post-body img {
-    width: 57.8%;
-    height: 46%;  
-    top: 16%;
-    left: 21.1%;    
-    display: flex;
-    position: fixed;
+    width: 100%;
+    height: 100%;
 }
-.post-foot-left{
-    top: 64%;
-    left: 22%;    
-    display: flex;
-    position: fixed;
+.post-foot{
+	height: 270px;
+	flex-direction: column;
 }
-.post-foot-right{
-    top: 64%;
-    right: 23%;    
+.post-foot-icons{
+    padding: 20px 20px 10px;
     display: flex;
-    position: fixed;
+    justify-content: space-between;
 }
-.post-foot-text{
-    top: 70%;    
+.post-foot-text > p{
+    padding: 10px 20px 0 15px;
+    font-size: 18px;
     text-align: left;
-    position: fixed;
-    padding: 10px 15px 0 15px;
-    font-size: 17.5px;
-}
-.foot-menu-button{
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: black;
-  background-color: white;
-  border: none;
-}
-.foot-menu-button:active {
-  background-color: white;
-  transform: translateY(4px);
-}
-.foot-menu-button-right{
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: black;
-  background-color: white;
-  border: none;
-}
-.foot-menu-button:active {
-  background-color: white;
-  transform: translateY(4px);
 }
