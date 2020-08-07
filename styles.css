@@ -1,0 +1,124 @@
+body{
+    font-family: 'Roboto';
+    background: #090909 ;
+}
+.background-black{
+    width: 970px;
+    height: 100%;
+    background: black;
+}
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.post{
+    width: 560px;
+    height: 780px;
+    background: white;
+}
+.post-header{
+	display: flex;
+	height: 72px;
+    justify-content: space-between;
+    align-items: center;
+	text-align: center;
+}
+.account{
+    display: flex;
+    align-items: center;
+}
+.profile{
+    width: 48px;
+    margin-left: 3px;
+}
+.user-name{
+    text-align: left;
+    font-size: 18px;
+}
+.user-name p{
+    margin: 1px;
+}
+p.user-title{
+    font-weight: 900;
+    font-size: 17px;
+}
+.settings{
+    position: fixed;
+    top: 10%;
+    left: 75%;
+}
+.settings-button{
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;}
+.settings-button:active {
+  background-color: white;
+  transform: translateY(4px);
+}
+.post-body img {
+    display: flex;
+    position: fixed;
+    top: 16%;
+    left: 21.1%;
+    width: 57.8%;
+    height: 46%;
+}
+.post-foot-left{
+    display: flex;
+    position: fixed;
+    top: 64%;
+    left: 22%;
+}
+.post-foot-right{
+    display: flex;
+    position: fixed;
+    top: 64%;
+    right: 23%;
+}
+.post-foot-text{
+    text-align: left;
+    padding: 10px 15px 0 15px;
+    font-size: 17.5px;
+    position: fixed;
+    top: 70%;
+}
+.foot-menu-button{
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+}
+.foot-menu-button:active {
+  background-color: white;
+  transform: translateY(4px);
+}
+.foot-menu-button-right{
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border: none;
+}
+.foot-menu-button:active {
+  background-color: white;
+  transform: translateY(4px);
+}
